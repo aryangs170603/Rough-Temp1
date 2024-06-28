@@ -1,5 +1,8 @@
 import React from 'react';
 import laptopImg from '../sap successfactor.png'; // Ensure you have the image in the src directory
+import AboutUs from './AboutUs';
+import { Link } from 'react-router-dom';
+
 
 const Hero = () => (
   <section className="hero">
@@ -7,8 +10,10 @@ const Hero = () => (
       <div className="hero-text">
         <h1>Innovate your skills, <span>Accelerate</span> career growth effectively.</h1>
         <div className="buttons">
-          <a href="#" className="btn">Book a Demo</a>
-          <a href="#" className="btn">Download Brochure</a>
+          
+          <Link to="/contact" className="btn">Book a Demo</Link>
+          <Link to="/contact" className="btn">Download Brochure</Link>
+
         </div>
       </div>
       <div className="laptop">
