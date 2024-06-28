@@ -16,7 +16,7 @@ const AboutUs = () => (
               <input type="text" placeholder="Your Name" />
               <input type="email" placeholder="Email Address" />
               <input type="tel" placeholder="Phone" />
-
+              <button type="submit">Submit</button>
             </form>
           </div>
         </div>

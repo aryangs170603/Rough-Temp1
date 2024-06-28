@@ -7,8 +7,8 @@ const Hero = () => (
       <div className="hero-text">
         <h1>Innovate your skills, <span>Accelerate</span> career growth effectively.</h1>
         <div className="buttons">
-          <Link to="/contact-us" className="btn">Book a Demo</Link>
-          <Link to="/contact-us" className="btn">Download Brochure</Link>
+          <a href="#" className="btn">Book a Demo</a>
+          <a href="#" className="btn">Download Brochure</a>
         </div>
       </div>
       <div className="laptop">
