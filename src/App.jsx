@@ -1,29 +1,33 @@
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
+import './App.css';
+import Header from './components/Header.jsx';
+import Hero from './components/Hero.jsx';
+import Companies from './components/Companies.jsx';
+import AboutUs from './components/AboutUs.jsx';
+import StudentsPlaced from './components/StudentsPlaced.jsx';
+import StudentsReview from './components/StudentsReview.jsx';
+import Awards from './components/Awards.jsx';
+import Footer from './components/Footer.jsx';
+
+
+const App = () => (
+  
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
-  );
-}
+      <Header />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="companies" element={<Companies />} />
+        <Route path="about-us" element={<AboutUs />} />
+        <Route path="students-placed" element={<StudentsPlaced />} />
+        <Route path="students-review" element={<StudentsReview />} />
+        <Route path="awards" element={<Awards />} />
+        <Route path="contact-us" element={<ContactUs />} /> {/* Add this route */}
+      </Routes>
+      <Footer />
+      </div>
+  
+
+);
 
 export default App;
