@@ -17,7 +17,7 @@ const AppContent = () => {
   return (
     <div className="App">
 
-      {!hide && <Header />}
+      <Header />
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="Companies" element={<Companies />} />
@@ -31,7 +31,7 @@ const AppContent = () => {
       {!hide && <AboutUs />}
       {!hide && <StudentsPlaced />}
       {!hide && <Awards />}
-      {!hide && <Footer />}
+       <Footer />
     </div>
   );
 };
